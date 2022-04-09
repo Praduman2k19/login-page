@@ -1,0 +1,79 @@
+.App{
+  background-color: rgb(242, 247, 247);
+  height: 100vh;
+  .headingName{
+    text-align: center;
+    padding: 50px 0px;
+    span{
+      font-size: 34px;
+    }
+  }
+
+
+  .login
+  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    mat-card{
+      max-width: 400px;
+      min-width: 300px;
+      padding: 30px 0px;
+      background: rgba(255, 255, 255, 0.636);
+      .heading{
+        display: flex;
+        justify-content: center;
+        h2{
+          font-size: 24px;
+        }
+      }
+      form{
+        padding: 0% 20px;
+      }
+      .formInput{
+        width: 100%;
+      }
+
+      button{
+        // background: rgb(118, 131, 190);
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 50px;
+        color: white;
+      }
+
+      .signup{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        span{
+          cursor: pointer;
+          color: blue;
+        }
+      }
+      .loginMessage{
+        background: rgb(178, 224, 178);
+        padding: 5px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .message{
+        background: rgb(178, 224, 178);
+        padding: 5px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .userError{
+        background: rgb(175, 146, 146);
+        padding: 5px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        text-align: center;
+      }
+    }
+  }
+
+}

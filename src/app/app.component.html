@@ -1,0 +1,32 @@
+<div class="App">
+  <div class="headingName">
+    <span>Angular Assignment</span>
+  </div>
+  <div class="login">
+    <mat-card>
+      <div class="heading">
+        <h2>Sign in</h2>
+      </div>
+
+      <form [formGroup]="loginForm" >
+
+        <mat-form-field class="formInput">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email" placeholder="Email" required>
+        </mat-form-field>
+
+        <mat-form-field class="formInput">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" placeholder="Password should be at least 8 charector" required>
+        </mat-form-field><br>
+
+        <button mat-raised-button color="primary" (click)="login(loginForm.value)" [disabled]="loginForm.invalid" >login</button>
+        <div class="userError" *ngIf="userError!=undefined">{{userError}}</div>
+      </form>
+    </mat-card>
+  </div>
+
+
+</div>
+
+
